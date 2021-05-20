@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SeniorComponentSkin" width="260" height="1032" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="17834022958" ></w:Config>
+	<e:Image width="218" height="476" horizontalCenter="0" source="common_bg3_png" top="304"/>
+	<e:Image source="common_icon_png" horizontalCenter="0" top="77"/>
+	<e:Group id="group_panel" left="0" top="0" bottom="0" right="0">
+		<ns1:CommonButton id="segment" width="92" height="76" left="30" top="320" name="segment" x="29.999999999999886" y="320" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="lineSegment" width="92" height="76" top="320" right="30" name="lineSegment" x="138" y="320" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="subSection" width="92" height="76" left="30" top="412" name="subSection" x="29.999999999999886" y="412" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="bracket" width="92" height="76" top="412" right="30" name="bracket" x="138" y="412" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="arrow" width="92" height="76" left="30" top="504" name="arrow" x="29.999999999999886" y="504" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="dottedLine" width="92" height="76" right="30" top="504" name="dottedLine" x="138" y="504" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="painting" width="92" height="76" left="30" top="596" name="painting" x="29.999999999999886" y="596.0000000000001" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="flupaint" width="92" height="76" right="30" top="596" name="flupaint" x="138" y="596.0000000000001" scaleX="1" scaleY="1"/>
+		<ns1:CommonButton id="btn_boxSelect" width="200" height="76" horizontalCenter="0" top="688" name="btn_boxSelect" x="29.999999999999886" y="688.0000000000001" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Image source="btn_bg_png" top="836" horizontalCenter="0"/>
+	<e:Image top="923" horizontalCenter="0" source="btn_bg_png"/>
+	<e:Button id="btn_recall" horizontalCenter="0" top="847">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_recall_normal_png" source.down="btn_recall_down_png" source.disabled="btn_recall_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_reset" horizontalCenter="0" top="934">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_reset_normal_png" source.down="btn_reset_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

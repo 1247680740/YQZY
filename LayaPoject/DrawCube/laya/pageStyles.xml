@@ -1,0 +1,6 @@
+<page>
+   <item name="main/GameViewScene.scene" props="" ifExport="内嵌模式" aName=""/>
+   <item name="main/GameStageScene.scene" props="" ifExport="内嵌模式" aName=""/>
+   <item name="main/PlayerGuideScene.scene" props="" ifExport="内嵌模式" aName=""/>
+   <item name="common/CommonButton.scene" props="" ifExport="内嵌模式" aName=""/>
+</page>

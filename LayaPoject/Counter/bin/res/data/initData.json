@@ -1,0 +1,85 @@
+{
+    "gameData": [
+        {
+            "counterId": 0,
+            "counterStr": "亿",
+            "counterNum": 0,
+            "counterSkin": "zhu1",
+            "sourceStr": "y",
+            "posX": 166,
+            "posY": 82
+        },
+        {
+            "counterId": 1,
+            "counterStr": "千万",
+            "counterNum": 0,
+            "counterSkin": "zhu2",
+            "sourceStr": "qw",
+            "posX": 322,
+            "posY": 82
+        },
+        {
+            "counterId": 2,
+            "counterStr": "百万",
+            "counterNum": 0,
+            "counterSkin": "zhu2",
+            "sourceStr": "bw",
+            "posX": 478,
+            "posY": 82
+        },
+        {
+            "counterId": 3,
+            "counterStr": "十万",
+            "counterNum": 0,
+            "counterSkin": "zhu2",
+            "sourceStr": "sw",
+            "posX": 634,
+            "posY": 82
+        },
+        {
+            "counterId": 4,
+            "counterStr": "万",
+            "counterNum": 0,
+            "counterSkin": "zhu2",
+            "sourceStr": "w",
+            "posX": 790,
+            "posY": 82
+        },
+        {
+            "counterId": 5,
+            "counterStr": "千",
+            "counterNum": 0,
+            "counterSkin": "zhu3",
+            "sourceStr": "q",
+            "posX": 946,
+            "posY": 82
+        },
+        {
+            "counterId": 6,
+            "counterStr": "百",
+            "counterNum": 0,
+            "counterSkin": "zhu3",
+            "sourceStr": "b",
+            "posX": 1102,
+            "posY": 82
+        },
+        {
+            "counterId": 7,
+            "counterStr": "十",
+            "counterNum": 0,
+            "counterSkin": "zhu3",
+            "sourceStr": "s",
+            "posX": 1258,
+            "posY": 82
+        },
+        {
+            "counterId": 8,
+            "counterStr": "个",
+            "counterNum": 0,
+            "counterSkin": "zhu3",
+            "sourceStr": "g",
+            "posX": 1414,
+            "posY": 82
+        }
+    ]
+}

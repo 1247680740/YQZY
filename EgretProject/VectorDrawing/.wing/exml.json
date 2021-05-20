@@ -1,0 +1,31 @@
+{
+  "design": {
+    "height": "72",
+    "width": "144"
+  },
+  "17833a216b3": {
+    "path": "core\\view\\main\\CommonButton.ts",
+    "class": "CommonButton",
+    "parentPath": ""
+  },
+  "17834022958": {
+    "path": "core\\view\\main\\SeniorComponent.ts",
+    "class": "SeniorComponent",
+    "parentPath": ""
+  },
+  "1783402e209": {
+    "path": "core\\view\\main\\LowGradeComponent.ts",
+    "class": "LowGradeComponent",
+    "parentPath": ""
+  },
+  "17835d4eb10": {
+    "path": "core\\view\\main\\CommonSubBtn.ts",
+    "class": "CommonSubBtn",
+    "parentPath": ""
+  },
+  "1783a57ee68": {
+    "path": "core\\view\\main\\CommonCheckBtn.ts",
+    "class": "CommonCheckBtn",
+    "parentPath": ""
+  }
+}

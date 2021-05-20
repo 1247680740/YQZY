@@ -1,0 +1,5 @@
+<res>
+   <item name="Sprite3d" type="" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="Sprite3d/bottomTure.png" type="Sprite" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+   <item name="Sprite3d/topTure.png" type="Sprite" compress="0" pack="2" quality="80" props="" picType="0" scale="0"/>
+</res>

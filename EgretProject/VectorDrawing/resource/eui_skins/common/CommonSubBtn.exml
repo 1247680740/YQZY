@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonSubBtnSkin" width="556" height="256" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <w:Config id="17835d4eb10"></w:Config>
+    <e:Image id="btn_sub" source="btn_range_normal_png" right="108" top="0" />
+    <e:Image id="btn_copy" source="btn_copy_normal_png" top="0" right="0" />
+    <e:Group id="group_panel" top="100" left="0">
+        <e:Image verticalCenter="0" horizontalCenter="0" source="common_bg5_png" />
+			<e:Image source="btn_cirBg_png" right="130" verticalCenter="0"/>
+			<e:Image source="btn_cirBg_png" verticalCenter="0" right="40"/>
+        <e:Button id="btn_cancle" right="136" verticalCenter="0">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_error_png" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btn_confirm" right="47" verticalCenter="0">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="btn_currect_png" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Group width="238" height="80" verticalCenter="0" left="40">
+            <e:Image verticalCenter="0" horizontalCenter="17" source="common_mask_png" />
+            <e:Label id="lable_tip1" text="分为" verticalCenter="0" left="0" size="32" textAlign="center" verticalAlign="middle" />
+            <e:Label id="label_tip2" text="段" size="32" textAlign="center" verticalAlign="middle" right="0" verticalCenter="0" />
+            <e:Scroller id="eui_scroller" width="118" height="70" horizontalCenter="17" verticalCenter="0">
+							<e:Group id="group_content" verticalCenter="0" horizontalCenter="0">
+								<e:layout>
+									<e:VerticalLayout horizontalAlign="center" gap="0" verticalAlign="middle"/>
+								</e:layout>
+							</e:Group>
+            </e:Scroller>
+        </e:Group>
+    </e:Group>
+</e:Skin>

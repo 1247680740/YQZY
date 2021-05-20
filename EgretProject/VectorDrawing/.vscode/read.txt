@@ -1,0 +1,2 @@
+线段:   self  x: evt.localX  y:evt.localY  endX:evt.localX  endY:evt.localY
+      parent  x: self.x  y:self.y-40  endX:self.endX  endY:self.y+40

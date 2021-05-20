@@ -1,0 +1,73 @@
+D .
+D button
+P 2E421FFD btn_bg.png
+P 9E1D737F circle_down.png
+P C54B587C circle_normal.png
+P 99BD2E48 circle_select.png
+P C483A094 custom_down.png
+P 6D1FABEF custom_normal.png
+P 8C817FD7 custom_select.png
+P 371D8E16 irreg_down.png
+P 68D9F487 irreg_normal.png
+P F7015D67 irreg_select.png
+P F40D0E2E recall_disable.png
+P 98448D0A recall_down.png
+P 29C24205 recall_normal.png
+P C45F1EA9 rect_down.png
+P AFE7D9AF rect_normal.png
+P 463F1649 rect_select.png
+P BAE69F02 reset_down.png
+P A6F4025D reset_normal.png
+P 88315EF3 square_down.png
+P 4B8C1B02 square_normal.png
+P B05AB794 square_select.png
+P 6A843E7A trape_down.png
+P B95015F6 trape_normal.png
+P 9B6B03FA trape_select.png
+P A8E37832 triangle_down.png
+P 2A33CBC6 triangle_normal.png
+P 9FAA8997 triangle_select.png
+D common
+R E53A77ED common_gameBg.png
+R 0E42DF28 common_leftBg.png
+P 9833C38C common_playIcon.png
+R 42918D6F common_rightBg.png
+P D248A81F common_rightTop.png
+P A56F3AE1 guideBtn.png
+P AD715C8F img_tip.png
+R 0ED74D3D maskBg.png
+D custom
+P 56638110 btn_bg.png
+P 334223A1 clean_disable.png
+P C10FD1EA clean_down.png
+P 251B901F clean_normal.png
+R B4716E21 custome_bg.png
+P 059BA9C1 img_canvas.png
+P DA724352 no_down.png
+P 91117D29 no_normal.png
+P 6D5DE778 ok_disable.png
+P 06A87381 ok_down.png
+P 49B5596B ok_normal.png
+P C0FAF4CC pointTip.png
+P 7638C788 recall_disable.png
+P FB5985FD recall_down.png
+P C7C8DE82 recall_normal.png
+D dialog
+P F804FCB3 btn_cancle_down.png
+P D7ADCC37 btn_cancle_normal.png
+P 30E1CDE1 btn_sure_down.png
+P 72F99C9F btn_sure_normal.png
+R A0560505 dialog_bg.png
+P 55100BD4 dialog_btnBg.png
+D guide
+P F23AB021 finish_down.png
+P 9F606DC9 finish_normal.png
+R D8861384 guide_bg.png
+P 3709D4D7 guide_btnBg.png
+P 00F2655B ico-close.png
+P 8AD436B7 next_down.png
+P DA15A883 next_normal.png
+P 5F535C33 point_no.png
+P 1ED0BFC2 point_yes.png
+P 2A3CF40C pre_down.png
+P 546DCE50 pre_normal.png

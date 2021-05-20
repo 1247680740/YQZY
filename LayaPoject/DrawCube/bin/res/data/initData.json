@@ -1,0 +1,92 @@
+{
+    "cueCheckBtn": -1,
+    "bntStyle": [
+        {
+            "btnType": 0,
+            "source": "square",
+            "bgSource": "",
+            "sourceUrl": "button/",
+            "canSelect": true,
+            "width": 92,
+            "height": 92,
+            "spWidth":606,
+            "spHeight":116,
+            "spX":448,
+            "spY":705
+        },
+        {
+            "btnType": 1,
+            "source": "rect",
+            "bgSource": "",
+            "sourceUrl": "button/",
+            "canSelect": true,
+            "width": 92,
+            "height": 92,
+            "spWidth":606,
+            "spHeight":116,
+            "spX":448,
+            "spY":705
+        },
+        {
+            "btnType": 2,
+            "source": "circle",
+            "bgSource": "",
+            "sourceUrl": "button/",
+            "canSelect": true,
+            "width": 92,
+            "height": 92,
+            "spWidth":606,
+            "spHeight":116,
+            "spX":448,
+            "spY":705
+        },
+        {
+            "btnType": 3,
+            "source": "triangle",
+            "bgSource": "",
+            "sourceUrl": "button/",
+            "canSelect": true,
+            "width": 92,
+            "height": 92,
+            "spWidth":606,
+            "spHeight":116,
+            "spX":448,
+            "spY":705
+        },
+        {
+            "btnType": 4,
+            "source": "trape",
+            "bgSource": "",
+            "sourceUrl": "button/",
+            "canSelect": true,
+            "width": 92,
+            "height": 92,
+            "spWidth":606,
+            "spHeight":116,
+            "spX":448,
+            "spY":705
+        },
+        {
+            "btnType": 5,
+            "source": "irreg",
+            "bgSource": "",
+            "sourceUrl": "button/",
+            "canSelect": true,
+            "width": 92,
+            "height": 92,
+            "spWidth":606,
+            "spHeight":116,
+            "spX":448,
+            "spY":705
+        },
+        {
+            "btnType": 6,
+            "source": "custom",
+            "bgSource": "",
+            "sourceUrl": "button/",
+            "canSelect": true,
+            "width": 198,
+            "height": 72
+        }
+    ]
+}

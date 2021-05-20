@@ -1,0 +1,416 @@
+{
+	"groups": [
+		{
+			"keys": "common_bg_png,common_bg1_png,common_bg2_png,arrow_down_png,arrow_normal_png,bracket_down_png,bracket_normal_png,btn_boxSelect_down_png,btn_boxSelect_normal_png,btn_bracket_down_png,btn_bracket_normal_png,btn_cancle_down_png,btn_cancle_normal_png,btn_confirm_down_png,btn_confirm_normal_png,btn_reset_down_png,btn_reset_normal_png,btn_segment_down_png,btn_segment_normal_png,flupaint_down_png,flupaint_normal_png,lineSegment_down_png,lineSegment_normal_png,painting_down_png,painting_normal_png,segment_down_png,segment_normal_png,subSection_down_png,subSection_normal_png,dottedLine_down_png,dottedLine_normal_png,btn_recall_normal_png,btn_recall_down_png,btn_subSection_normal_png,btn_subSection_down_png,common_bg3_png,tip1_png,tip2_png,tip3_png,btn_copy_down_png,btn_copy_normal_png,btn_range_down_png,btn_range_normal_png,btn_currect_png,btn_error_png,common_bg4_png,common_icon_png,common_bg5_png,common_mask_png,btn_range_select_png,flu_bg_png,flu_blue_png,flu_circle_png,flu_gray_png,flu_green_png,flu_oriange_png,flu_point_png,flu_purple_png,flu_red_png,flu_sure_png,flu_yellow_png,flu_black_png,flu_colorBg_png,flu_range_png,segment_move_png,lineSegment_move_png,subSection_move_png,dottedLine_move_png,arrow_move_png,bracket_move_png,btn_bg_png,flu_cir_png,btn_cirBg_png,tip5_png,tip4_png,moveTip_png",
+			"name": "preload"
+		},
+		{
+			"keys": "loading_json,loading_png,progress1_png,progress2_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/common/common_bg.png",
+			"type": "image",
+			"name": "common_bg_png"
+		},
+		{
+			"url": "assets/common/common_bg1.png",
+			"type": "image",
+			"name": "common_bg1_png"
+		},
+		{
+			"url": "assets/common/common_bg2.png",
+			"type": "image",
+			"name": "common_bg2_png"
+		},
+		{
+			"url": "assets/button/arrow_down.png",
+			"type": "image",
+			"name": "arrow_down_png"
+		},
+		{
+			"url": "assets/button/arrow_normal.png",
+			"type": "image",
+			"name": "arrow_normal_png"
+		},
+		{
+			"url": "assets/button/bracket_down.png",
+			"type": "image",
+			"name": "bracket_down_png"
+		},
+		{
+			"url": "assets/button/bracket_normal.png",
+			"type": "image",
+			"name": "bracket_normal_png"
+		},
+		{
+			"url": "assets/button/btn_boxSelect_down.png",
+			"type": "image",
+			"name": "btn_boxSelect_down_png"
+		},
+		{
+			"url": "assets/button/btn_boxSelect_normal.png",
+			"type": "image",
+			"name": "btn_boxSelect_normal_png"
+		},
+		{
+			"url": "assets/button/btn_bracket_down.png",
+			"type": "image",
+			"name": "btn_bracket_down_png"
+		},
+		{
+			"url": "assets/button/btn_bracket_normal.png",
+			"type": "image",
+			"name": "btn_bracket_normal_png"
+		},
+		{
+			"url": "assets/button/btn_cancle_down.png",
+			"type": "image",
+			"name": "btn_cancle_down_png"
+		},
+		{
+			"url": "assets/button/btn_cancle_normal.png",
+			"type": "image",
+			"name": "btn_cancle_normal_png"
+		},
+		{
+			"url": "assets/button/btn_confirm_down.png",
+			"type": "image",
+			"name": "btn_confirm_down_png"
+		},
+		{
+			"url": "assets/button/btn_confirm_normal.png",
+			"type": "image",
+			"name": "btn_confirm_normal_png"
+		},
+		{
+			"url": "assets/button/btn_reset_down.png",
+			"type": "image",
+			"name": "btn_reset_down_png"
+		},
+		{
+			"url": "assets/button/btn_reset_normal.png",
+			"type": "image",
+			"name": "btn_reset_normal_png"
+		},
+		{
+			"url": "assets/button/btn_segment_down.png",
+			"type": "image",
+			"name": "btn_segment_down_png"
+		},
+		{
+			"url": "assets/button/btn_segment_normal.png",
+			"type": "image",
+			"name": "btn_segment_normal_png"
+		},
+		{
+			"url": "assets/button/flupaint_down.png",
+			"type": "image",
+			"name": "flupaint_down_png"
+		},
+		{
+			"url": "assets/button/flupaint_normal.png",
+			"type": "image",
+			"name": "flupaint_normal_png"
+		},
+		{
+			"url": "assets/button/lineSegment_down.png",
+			"type": "image",
+			"name": "lineSegment_down_png"
+		},
+		{
+			"url": "assets/button/lineSegment_normal.png",
+			"type": "image",
+			"name": "lineSegment_normal_png"
+		},
+		{
+			"url": "assets/button/painting_down.png",
+			"type": "image",
+			"name": "painting_down_png"
+		},
+		{
+			"url": "assets/button/painting_normal.png",
+			"type": "image",
+			"name": "painting_normal_png"
+		},
+		{
+			"url": "assets/button/segment_down.png",
+			"type": "image",
+			"name": "segment_down_png"
+		},
+		{
+			"url": "assets/button/segment_normal.png",
+			"type": "image",
+			"name": "segment_normal_png"
+		},
+		{
+			"url": "assets/button/subSection_down.png",
+			"type": "image",
+			"name": "subSection_down_png"
+		},
+		{
+			"url": "assets/button/subSection_normal.png",
+			"type": "image",
+			"name": "subSection_normal_png"
+		},
+		{
+			"url": "assets/button/dottedLine_down.png",
+			"type": "image",
+			"name": "dottedLine_down_png"
+		},
+		{
+			"url": "assets/button/dottedLine_normal.png",
+			"type": "image",
+			"name": "dottedLine_normal_png"
+		},
+		{
+			"url": "assets/button/btn_recall_normal.png",
+			"type": "image",
+			"name": "btn_recall_normal_png"
+		},
+		{
+			"url": "assets/button/btn_recall_down.png",
+			"type": "image",
+			"name": "btn_recall_down_png"
+		},
+		{
+			"url": "assets/button/btn_subSection_normal.png",
+			"type": "image",
+			"name": "btn_subSection_normal_png"
+		},
+		{
+			"url": "assets/button/btn_subSection_down.png",
+			"type": "image",
+			"name": "btn_subSection_down_png"
+		},
+		{
+			"url": "assets/common/common_bg3.png",
+			"type": "image",
+			"name": "common_bg3_png"
+		},
+		{
+			"url": "assets/tips/tip1.png",
+			"type": "image",
+			"name": "tip1_png"
+		},
+		{
+			"url": "assets/tips/tip2.png",
+			"type": "image",
+			"name": "tip2_png"
+		},
+		{
+			"url": "assets/tips/tip3.png",
+			"type": "image",
+			"name": "tip3_png"
+		},
+		{
+			"url": "assets/button/btn_copy_down.png",
+			"type": "image",
+			"name": "btn_copy_down_png"
+		},
+		{
+			"url": "assets/button/btn_copy_normal.png",
+			"type": "image",
+			"name": "btn_copy_normal_png"
+		},
+		{
+			"url": "assets/button/btn_range_down.png",
+			"type": "image",
+			"name": "btn_range_down_png"
+		},
+		{
+			"url": "assets/button/btn_range_normal.png",
+			"type": "image",
+			"name": "btn_range_normal_png"
+		},
+		{
+			"url": "assets/button/btn_currect.png",
+			"type": "image",
+			"name": "btn_currect_png"
+		},
+		{
+			"url": "assets/button/btn_error.png",
+			"type": "image",
+			"name": "btn_error_png"
+		},
+		{
+			"url": "assets/common/common_bg4.png",
+			"type": "image",
+			"name": "common_bg4_png"
+		},
+		{
+			"url": "assets/common/common_icon.png",
+			"type": "image",
+			"name": "common_icon_png"
+		},
+		{
+			"url": "assets/common/common_bg5.png",
+			"type": "image",
+			"name": "common_bg5_png"
+		},
+		{
+			"url": "assets/common/common_mask.png",
+			"type": "image",
+			"name": "common_mask_png"
+		},
+		{
+			"url": "assets/button/btn_range_select.png",
+			"type": "image",
+			"name": "btn_range_select_png"
+		},
+		{
+			"url": "assets/flupaint/flu_bg.png",
+			"type": "image",
+			"name": "flu_bg_png"
+		},
+		{
+			"url": "assets/flupaint/flu_blue.png",
+			"type": "image",
+			"name": "flu_blue_png"
+		},
+		{
+			"url": "assets/flupaint/flu_circle.png",
+			"type": "image",
+			"name": "flu_circle_png"
+		},
+		{
+			"url": "assets/flupaint/flu_gray.png",
+			"type": "image",
+			"name": "flu_gray_png"
+		},
+		{
+			"url": "assets/flupaint/flu_green.png",
+			"type": "image",
+			"name": "flu_green_png"
+		},
+		{
+			"url": "assets/flupaint/flu_oriange.png",
+			"type": "image",
+			"name": "flu_oriange_png"
+		},
+		{
+			"url": "assets/flupaint/flu_point.png",
+			"type": "image",
+			"name": "flu_point_png"
+		},
+		{
+			"url": "assets/flupaint/flu_purple.png",
+			"type": "image",
+			"name": "flu_purple_png"
+		},
+		{
+			"url": "assets/flupaint/flu_red.png",
+			"type": "image",
+			"name": "flu_red_png"
+		},
+		{
+			"url": "assets/flupaint/flu_sure.png",
+			"type": "image",
+			"name": "flu_sure_png"
+		},
+		{
+			"url": "assets/flupaint/flu_yellow.png",
+			"type": "image",
+			"name": "flu_yellow_png"
+		},
+		{
+			"url": "assets/flupaint/flu_black.png",
+			"type": "image",
+			"name": "flu_black_png"
+		},
+		{
+			"url": "assets/flupaint/flu_colorBg.png",
+			"type": "image",
+			"name": "flu_colorBg_png"
+		},
+		{
+			"url": "assets/flupaint/flu_range.png",
+			"type": "image",
+			"name": "flu_range_png"
+		},
+		{
+			"url": "assets/moveImg/segment_move.png",
+			"type": "image",
+			"name": "segment_move_png"
+		},
+		{
+			"url": "assets/moveImg/lineSegment_move.png",
+			"type": "image",
+			"name": "lineSegment_move_png"
+		},
+		{
+			"url": "assets/moveImg/subSection_move.png",
+			"type": "image",
+			"name": "subSection_move_png"
+		},
+		{
+			"url": "assets/moveImg/dottedLine_move.png",
+			"type": "image",
+			"name": "dottedLine_move_png"
+		},
+		{
+			"url": "assets/moveImg/arrow_move.png",
+			"type": "image",
+			"name": "arrow_move_png"
+		},
+		{
+			"url": "assets/moveImg/bracket_move.png",
+			"type": "image",
+			"name": "bracket_move_png"
+		},
+		{
+			"url": "assets/button/btn_bg.png",
+			"type": "image",
+			"name": "btn_bg_png"
+		},
+		{
+			"url": "assets/flupaint/flu_cir.png",
+			"type": "image",
+			"name": "flu_cir_png"
+		},
+		{
+			"url": "assets/button/btn_cirBg.png",
+			"type": "image",
+			"name": "btn_cirBg_png"
+		},
+		{
+			"url": "assets/tips/tip4.png",
+			"type": "image",
+			"name": "tip4_png"
+		},
+		{
+			"url": "assets/tips/tip5.png",
+			"type": "image",
+			"name": "tip5_png"
+		},
+		{
+			"url": "assets/tips/moveTip.png",
+			"type": "image",
+			"name": "moveTip_png"
+		},
+		{
+			"url": "assets/loading/loading.png",
+			"type": "image",
+			"name": "loading_png"
+		},
+		{
+			"url": "assets/loading/progress1.png",
+			"type": "image",
+			"name": "progress1_png",
+			"scale9grid": "219,13,43,11"
+		},
+		{
+			"url": "assets/loading/progress2.png",
+			"type": "image",
+			"name": "progress2_png",
+			"scale9grid": "231,9,14,16"
+		},
+		{
+			"url": "assets/loading/loading.json",
+			"type": "json",
+			"name": "loading_json"
+		}
+	]
+}

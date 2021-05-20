@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameViewSKin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="common_bg2_png" right="18" top="24" visible="true"/>
+	<e:Group id="group_panel" left="20" top="24">
+		<e:Image id="img_bg" name="img_bg" source="common_bg1_png" verticalCenter="0" horizontalCenter="0" visible="true"/>
+		<e:Group id="middleLayer" top="52" left="42" width="1502" visible="true" height="932">
+		</e:Group>
+		<e:Group id="topLayer" width="1502" height="932" left="42" top="52" touchThrough="true"/>
+	</e:Group>
+	<e:Group id="group_right" right="20" top="24"/>
+</e:Skin>

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "17zy_jxyw_common_confrim": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0"
+  }
+}

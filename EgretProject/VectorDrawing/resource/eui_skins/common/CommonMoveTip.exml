@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CommonMoveTipSkin"
+	 width="144"
+	height="72" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="moveTip_png" verticalCenter="0" horizontalCenter="0"/>
+	<e:Label id="label_tip" size="20" textAlign="center" verticalAlign="middle" verticalCenter="-9" horizontalCenter="0" fontFamily="Microsoft YaHei" textColor="0xF5FBFF"/>
+</e:Skin>

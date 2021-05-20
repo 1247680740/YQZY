@@ -1,0 +1,22 @@
+{
+	"skins": {
+		"CommonButton": "resource/eui_skins/common/CommonButton.exml",
+		"SeniorComponent": "resource/eui_skins/common/SeniorComponent.exml",
+		"LowGradeComponent": "resource/eui_skins/common/LowGradeComponent.exml",
+		"CommonSubBtn": "resource/eui_skins/common/CommonSubBtn.exml",
+		"CommonCheckBtn": "resource/eui_skins/common/CommonCheckBtn.exml"
+	},
+	"exmls": [
+		"resource/eui_skins/common/CommonButton.exml",
+		"resource/eui_skins/common/CommonCheckBtn.exml",
+		"resource/eui_skins/common/CommonMoveTip.exml",
+		"resource/eui_skins/common/CommonSubBtn.exml",
+		"resource/eui_skins/common/LowGradeComponent.exml",
+		"resource/eui_skins/common/SeniorComponent.exml",
+		"resource/eui_skins/GameCheckFLuSkin.exml",
+		"resource/eui_skins/GameResetSkin.exml",
+		"resource/eui_skins/GameViewSKin.exml",
+		"resource/eui_skins/MainUISkin.exml"
+	],
+	"path": "resource/default.thm.json"
+}
