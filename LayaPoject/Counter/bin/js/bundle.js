@@ -41,7 +41,7 @@
                     this.createView(SingleCounterItemUI.uiView);
                 }
             }
-            SingleCounterItemUI.uiView = { "type": "View", "props": { "width": 148, "height": 895 }, "compId": 2, "child": [{ "type": "Image", "props": { "var": "img_top", "top": 0, "centerX": 0 }, "compId": 3 }, { "type": "Label", "props": { "y": 17, "x": 74, "var": "label_num", "valign": "middle", "fontSize": 80, "font": "FZLTCHJW", "color": "#ffffff", "centerX": 0, "align": "center" }, "compId": 5 }, { "type": "CommonButton", "props": { "width": 134, "var": "btn_unit", "runtime": "script/core/view/common/CommonButton.ts", "height": 98, "centerX": 0, "bottom": 0 }, "compId": 4 }, { "type": "Sprite", "props": { "y": 756, "x": 0, "width": 148, "var": "sp_groung", "height": 2, "alpha": 0 }, "compId": 7, "child": [{ "type": "Script", "props": { "type": "static", "runtime": "Laya.RigidBody" }, "compId": 8 }, { "type": "Script", "props": { "y": 0, "x": 0, "width": 148, "label": "ground", "height": 2, "runtime": "Laya.BoxCollider" }, "compId": 9 }] }, { "type": "Box", "props": { "width": 72, "var": "box_zhu", "height": 546, "centerX": 0, "bottom": 139 }, "compId": 6 }], "loadList": [], "loadList3D": [] };
+            SingleCounterItemUI.uiView = { "type": "View", "props": { "width": 148, "height": 895 }, "compId": 2, "child": [{ "type": "Image", "props": { "var": "img_top", "top": 0, "centerX": 0 }, "compId": 3 }, { "type": "Label", "props": { "y": 17, "x": 74, "var": "label_num", "valign": "middle", "fontSize": 80, "font": "Arial", "color": "#ffffff", "centerX": 0, "align": "center" }, "compId": 5 }, { "type": "CommonButton", "props": { "width": 134, "var": "btn_unit", "runtime": "script/core/view/common/CommonButton.ts", "height": 98, "centerX": 0, "bottom": 0 }, "compId": 4 }, { "type": "Sprite", "props": { "y": 756, "x": 0, "width": 148, "var": "sp_groung", "height": 2, "alpha": 0 }, "compId": 7, "child": [{ "type": "Script", "props": { "type": "static", "runtime": "Laya.RigidBody" }, "compId": 8 }, { "type": "Script", "props": { "y": 0, "x": 0, "width": 148, "label": "ground", "height": 2, "runtime": "Laya.BoxCollider" }, "compId": 9 }] }, { "type": "Box", "props": { "width": 72, "var": "box_zhu", "height": 546, "centerX": 0, "bottom": 139 }, "compId": 6 }], "loadList": [], "loadList3D": [] };
             common.SingleCounterItemUI = SingleCounterItemUI;
             REG("ui.common.SingleCounterItemUI", SingleCounterItemUI);
         })(common = ui.common || (ui.common = {}));
@@ -426,7 +426,7 @@
         onEnable() {
             this.size(72, 48);
             this.scale(0.8, 0.8);
-            this.centerX = 0;
+            this.centerX = 2.5;
             this.y = 0;
         }
         startTween(isFirst) {
@@ -533,6 +533,12 @@
             this.setBtnTouch();
             this.changeHasCounter();
         }
+        resetItem(data, startIndex) {
+            this._counterData = data;
+            this.setLabelShow(this._counterData.counterNum);
+            this.setBtnTouch();
+            this.box_zhu.removeChildren();
+        }
         addAllCounterData(evt) {
             let isCanTouch = HomeMediator.getInstance().getTouchStatus();
             if (isCanTouch) {
@@ -555,8 +561,8 @@
                 if (startNum < delNum) {
                     let sp = this.box_zhu.getChildAt(i);
                     if (sp) {
-                        allTime += (i * 40);
-                        Laya.timer.once(i * 40, this, this.startDelete, [sp], false);
+                        allTime += (i * 20);
+                        sp.startTween(false);
                     }
                     startNum += 1;
                 }
@@ -692,7 +698,7 @@
             for (let i = 0; i < data.length; i++) {
                 let item = this.panel_content.getChildAt(i);
                 if (item) {
-                    item.changeItem(data[i], startIndex);
+                    item.resetItem(data[i], startIndex);
                 }
             }
         }

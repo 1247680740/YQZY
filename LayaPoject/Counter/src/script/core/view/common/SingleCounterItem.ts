@@ -59,11 +59,6 @@ export class SingleCounterItem extends ui.common.SingleCounterItemUI {
         this.img_top.skin = "counter/" + this._counterData.counterSkin + "_bg.png";
         (this.btn_unit as CommonButton).initView(134, 98, this._counterData.sourceStr, "button/");
         this.setLabelShow(this._counterData.counterNum);
-        // if (this._counterData.counterId >= startIndex) {
-        //     this.setLabelShow(this._counterData.counterNum);
-        // } else {
-        //     this.setLabelShow(-1);
-        // }
         this.setBtnTouch();
         this.changeHasCounter();
         (this.btn_unit as CommonButton).on(Laya.Event.CLICK, this, this.addAllCounterData);
@@ -72,13 +67,16 @@ export class SingleCounterItem extends ui.common.SingleCounterItemUI {
     public changeItem(data: Counter, startIndex: number): void {
         this._counterData = data;
         this.setLabelShow(this._counterData.counterNum);
-        // if (this._counterData.counterId >= startIndex) {
-        //     this.setLabelShow(this._counterData.counterNum);
-        // } else {
-        //     this.setLabelShow(-1);
-        // }
         this.setBtnTouch();
         this.changeHasCounter();
+    }
+
+    public resetItem(data: Counter, startIndex: number): void {
+        this._counterData = data;
+        this.setLabelShow(this._counterData.counterNum);
+        this.setBtnTouch();
+        // this.changeHasCounter();
+        this.box_zhu.removeChildren();
     }
 
     private addAllCounterData(evt: Laya.Event): void {
@@ -108,8 +106,9 @@ export class SingleCounterItem extends ui.common.SingleCounterItemUI {
             if (startNum < delNum) {
                 let sp: CommonCounter = this.box_zhu.getChildAt(i) as CommonCounter;
                 if (sp) {
-                    allTime += (i * 40);
-                    Laya.timer.once(i * 40, this, this.startDelete, [sp], false);
+                    allTime += (i * 20);
+                    sp.startTween(false);
+                    // Laya.timer.once(i * 20, this, this.startDelete, [sp], false);
                 }
                 startNum += 1;
             }

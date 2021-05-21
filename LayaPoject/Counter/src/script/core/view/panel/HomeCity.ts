@@ -85,7 +85,7 @@ export class HomeCity extends ui.main.GameViewSceneUI {
         for (let i = 0; i < data.length; i++) {
             let item: SingleCounterItem = this.panel_content.getChildAt(i) as SingleCounterItem;
             if (item) {
-                item.changeItem(data[i], startIndex);
+                item.resetItem(data[i], startIndex);
             }
         }
     }

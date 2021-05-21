@@ -29,7 +29,7 @@ export default class CommonCounter extends ui.common.CommonCounterUI {
         //设置初始速度
         this.size(72, 48);
         this.scale(0.8, 0.8);
-        this.centerX = 0;
+        this.centerX = 2.5;
         this.y = 0;
         // this.img_bg.on(Laya.Event.MOUSE_DOWN, this, this.downImg);
         // this.img_bg.on(Laya.Event.MOUSE_UP, this, this.upImg);
