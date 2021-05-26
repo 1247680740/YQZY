@@ -41,7 +41,7 @@
                     this.createView(SingleCounterItemUI.uiView);
                 }
             }
-            SingleCounterItemUI.uiView = { "type": "View", "props": { "width": 148, "height": 895 }, "compId": 2, "child": [{ "type": "Image", "props": { "var": "img_top", "top": 0, "centerX": 0 }, "compId": 3 }, { "type": "Label", "props": { "y": 17, "x": 74, "var": "label_num", "valign": "middle", "fontSize": 80, "font": "Arial", "color": "#ffffff", "centerX": 0, "align": "center" }, "compId": 5 }, { "type": "CommonButton", "props": { "width": 134, "var": "btn_unit", "runtime": "script/core/view/common/CommonButton.ts", "height": 98, "centerX": 0, "bottom": 0 }, "compId": 4 }, { "type": "Sprite", "props": { "y": 756, "x": 0, "width": 148, "var": "sp_groung", "height": 2, "alpha": 0 }, "compId": 7, "child": [{ "type": "Script", "props": { "type": "static", "runtime": "Laya.RigidBody" }, "compId": 8 }, { "type": "Script", "props": { "y": 0, "x": 0, "width": 148, "label": "ground", "height": 2, "runtime": "Laya.BoxCollider" }, "compId": 9 }] }, { "type": "Box", "props": { "width": 72, "var": "box_zhu", "height": 546, "centerX": 0, "bottom": 139 }, "compId": 6 }], "loadList": [], "loadList3D": [] };
+            SingleCounterItemUI.uiView = { "type": "View", "props": { "width": 148, "height": 895 }, "compId": 2, "child": [{ "type": "Image", "props": { "var": "img_top", "top": 0, "centerX": 0 }, "compId": 3 }, { "type": "Label", "props": { "y": 19, "x": 74, "var": "label_num", "valign": "middle", "fontSize": 80, "font": "Arial", "color": "#ffffff", "centerX": 0, "align": "center" }, "compId": 5 }, { "type": "CommonButton", "props": { "width": 134, "var": "btn_unit", "runtime": "script/core/view/common/CommonButton.ts", "height": 98, "centerX": 0, "bottom": 0 }, "compId": 4 }, { "type": "Sprite", "props": { "y": 756, "x": 0, "width": 148, "var": "sp_groung", "height": 2, "alpha": 0 }, "compId": 7, "child": [{ "type": "Script", "props": { "type": "static", "runtime": "Laya.RigidBody" }, "compId": 8 }, { "type": "Script", "props": { "y": 0, "x": 0, "width": 148, "label": "ground", "height": 2, "runtime": "Laya.BoxCollider" }, "compId": 9 }] }, { "type": "Box", "props": { "width": 72, "var": "box_zhu", "height": 546, "centerX": 0, "bottom": 139 }, "compId": 6 }], "loadList": [], "loadList3D": [] };
             common.SingleCounterItemUI = SingleCounterItemUI;
             REG("ui.common.SingleCounterItemUI", SingleCounterItemUI);
         })(common = ui.common || (ui.common = {}));
@@ -82,7 +82,7 @@
                     this.createView(PlayGuideViewUI.uiView);
                 }
             }
-            PlayGuideViewUI.uiView = { "type": "View", "props": { "width": 1920, "height": 1080 }, "compId": 2, "child": [{ "type": "Image", "props": { "width": 1920, "height": 1080, "centerY": 0, "centerX": 0 }, "compId": 6 }, { "type": "Panel", "props": { "var": "panel_content", "centerY": 0, "centerX": 0 }, "compId": 7, "child": [{ "type": "Sprite", "props": { "y": 0, "x": 0, "var": "img_bg" }, "compId": 14 }, { "type": "Sprite", "props": { "var": "btn_close" }, "compId": 15 }, { "type": "Sprite", "props": { "y": 20, "x": 0, "var": "box_gif" }, "compId": 16 }, { "type": "Sprite", "props": { "y": 499, "x": 28, "var": "box_point" }, "compId": 17 }, { "type": "Sprite", "props": { "var": "btn_left" }, "compId": 18 }, { "type": "Sprite", "props": { "var": "btn_right" }, "compId": 19 }] }], "loadList": [], "loadList3D": [] };
+            PlayGuideViewUI.uiView = { "type": "View", "props": { "width": 1920, "height": 1080 }, "compId": 2, "child": [{ "type": "Sprite", "props": { "y": 0, "x": 0, "width": 1920, "texture": "common/maskBg.png", "height": 1080, "alpha": 0.5 }, "compId": 20 }, { "type": "Panel", "props": { "width": 892, "var": "panel_content", "height": 552, "centerY": 0, "centerX": 0 }, "compId": 7, "child": [{ "type": "Sprite", "props": { "y": 0, "x": 0, "width": 780, "var": "img_bg", "texture": "common/guide_bg.png", "height": 552 }, "compId": 14 }, { "type": "Sprite", "props": { "y": 240, "x": 820, "var": "btn_close", "texture": "guideView/btn_close.png" }, "compId": 15 }, { "type": "Sprite", "props": { "y": 20, "x": 15, "var": "box_gif" }, "compId": 16 }, { "type": "Sprite", "props": { "y": 499, "x": 28, "var": "box_point" }, "compId": 17 }, { "type": "Sprite", "props": { "y": 471, "x": 419, "var": "btn_left" }, "compId": 18 }, { "type": "Sprite", "props": { "y": 471, "x": 591, "var": "btn_right" }, "compId": 19 }] }], "loadList": ["guideView/btn_close.png"], "loadList3D": [] };
             main.PlayGuideViewUI = PlayGuideViewUI;
             REG("ui.main.PlayGuideViewUI", PlayGuideViewUI);
         })(main = ui.main || (ui.main = {}));
@@ -142,7 +142,7 @@
     GameConfig.screenMode = "horizontal";
     GameConfig.alignV = "middle";
     GameConfig.alignH = "center";
-    GameConfig.startScene = "common/SingleCounterItem.scene";
+    GameConfig.startScene = "main/PlayGuideView.scene";
     GameConfig.sceneRoot = "";
     GameConfig.debug = false;
     GameConfig.stat = false;
@@ -419,7 +419,7 @@
             this._parenBox = this.parent;
             this.img_bg.loadImage("counter/" + this._sourceType + "_normal.png");
             if (this._parenBox) {
-                this._tagPos = this._parenBox.height - (this._parenBox.numChildren * 37);
+                this._tagPos = this._parenBox.height - (this._parenBox.numChildren * 38);
             }
             this.startTween(true);
         }
@@ -718,6 +718,7 @@
             AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_CONFIRM);
         }
         opneGuide() {
+            AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
         }
         initMainBtn() {
             this.btn_recall.initView(226, 114, "recall", "guide/");
@@ -1147,8 +1148,6 @@
             this.guidePanel = new PlayerGuideView();
             this.startIndex = 0;
             this.videoLen = 0;
-            this.videoPlay = null;
-            this.maskSP = null;
             this.curTween = null;
         }
         listNotificationInterests() {
@@ -1172,7 +1171,7 @@
         }
         initData() {
             this.startIndex = 1;
-            this.videoLen = 3;
+            this.videoLen = 2;
         }
         initUI() {
             this.initBtnShow();
@@ -1190,21 +1189,21 @@
                 this.guidePanel.btn_left.visible = true;
                 if (this.startIndex == 1) {
                     this.guidePanel.btn_left.visible = false;
-                    this.guidePanel.btn_right.loadImage("guide/next_normal.png");
+                    this.guidePanel.btn_right.loadImage("guideView/next_normal.png");
                 }
                 else if (this.startIndex == this.videoLen) {
-                    this.guidePanel.btn_left.loadImage("guide/pre_normal.png");
-                    this.guidePanel.btn_right.loadImage("guide/finish_normal.png");
+                    this.guidePanel.btn_left.loadImage("guideView/pre_normal.png");
+                    this.guidePanel.btn_right.loadImage("guideView/finish_normal.png");
                 }
                 else {
-                    this.guidePanel.btn_left.loadImage("guide/pre_normal.png");
-                    this.guidePanel.btn_right.loadImage("guide/next_normal.png");
+                    this.guidePanel.btn_left.loadImage("guideView/pre_normal.png");
+                    this.guidePanel.btn_right.loadImage("guideView/next_normal.png");
                 }
             }
             else {
                 this.guidePanel.btn_left.visible = false;
                 this.guidePanel.btn_right.visible = true;
-                this.guidePanel.btn_right.loadImage("guide/finish_normal.png");
+                this.guidePanel.btn_right.loadImage("guideView/finish_normal.png");
             }
         }
         initPoint() {
@@ -1212,10 +1211,10 @@
                 for (let i = 0; i < this.guidePanel.box_point.numChildren; i++) {
                     let img = this.guidePanel.box_point.getChildAt(i);
                     if ((i + 1) == this.startIndex) {
-                        img.loadImage("guide/point_yes.png");
+                        img.loadImage("guideView/point_yes.png");
                     }
                     else {
-                        img.loadImage("guide/point_no.png");
+                        img.loadImage("guideView/point_no.png");
                     }
                 }
             }
@@ -1223,10 +1222,10 @@
                 for (let i = 1; i < this.videoLen + 1; i++) {
                     let pointImg = Laya.Pool.getItemByClass("Sprite", Laya.Sprite);
                     if (i == this.startIndex) {
-                        pointImg.loadImage("guide/point_yes.png");
+                        pointImg.loadImage("guideView/point_yes.png");
                     }
                     else {
-                        pointImg.loadImage("guide/point_no.png");
+                        pointImg.loadImage("guideView/point_no.png");
                     }
                     pointImg.x = (i - 1) * 28;
                     this.guidePanel.box_point.addChild(pointImg);
@@ -1234,44 +1233,11 @@
             }
         }
         initVideo() {
-            if (!this.videoPlay) {
-                this.videoPlay = new Laya.Video();
-                this.guidePanel.box_gif.addChild(this.videoPlay);
-                this.videoPlay.width = 750;
-                this.videoPlay.height = 440;
-                this.videoPlay.loop = true;
-                this.videoPlay.muted = true;
-                this.videoPlay.preload = "auto";
-                this.addMaskSP();
-            }
-            this.videoPlay.pause();
-            this.videoPlay.load("res/gif/gif" + this.startIndex + ".mp4");
-            this.videoPlay.reload();
-            this.videoPlay.play();
+            this.guidePanel.box_gif.loadImage("common/gif" + this.startIndex + ".png");
         }
         initAni() {
             this.guidePanel.panel_content.scale(0, 0);
-            this.curTween = Laya.Tween.to(this.guidePanel.panel_content, { scaleX: 1, scaleY: 1 }, 500);
-        }
-        addMaskSP() {
-            if (!this.maskSP) {
-                this.maskSP = new Laya.Sprite();
-                this.guidePanel.panel_content.addChildAt(this.maskSP, 0);
-            }
-            let chaX = 10;
-            let wNum = 750;
-            let hNum = 440;
-            let chaW = wNum - chaX;
-            let chaH = hNum - chaX;
-            let path = [
-                ["moveTo", chaX, 0],
-                ["arcTo", wNum, 0, wNum, chaX, 10],
-                ["arcTo", wNum, hNum, chaW, hNum, 10],
-                ["arcTo", 0, hNum, 0, chaH, 10],
-                ["arcTo", 0, 0, chaX, 0, 10],
-            ];
-            this.maskSP.graphics.drawPath(0, 0, path, { fillStyle: "#00ffff" });
-            this.guidePanel.box_gif.mask = this.maskSP;
+            this.curTween = Laya.Tween.to(this.guidePanel.panel_content, { scaleX: 1, scaleY: 1 }, 200, Laya.Ease.sineIn);
         }
         upLeft() {
             if (this.startIndex == 1) {
@@ -1296,28 +1262,18 @@
             }
         }
         downLeft() {
-            this.guidePanel.btn_left.loadImage("guide/pre_down.png");
+            this.guidePanel.btn_left.loadImage("guideView/pre_down.png");
         }
         downRight() {
             if (this.startIndex == this.videoLen) {
-                this.guidePanel.btn_right.loadImage("guide/finish_down.png");
+                this.guidePanel.btn_right.loadImage("guideView/finish_down.png");
             }
             else {
-                this.guidePanel.btn_right.loadImage("guide/next_down.png");
+                this.guidePanel.btn_right.loadImage("guideView/next_down.png");
             }
         }
         closeButtonClick() {
             Laya.Tween.clear(this.curTween);
-            if (this.videoPlay) {
-                this.videoPlay.pause();
-                this.videoPlay.destroy();
-            }
-            this.videoPlay = null;
-            this.maskSP.graphics.clear();
-            this.maskSP.destroy();
-            this.maskSP = null;
-            this.guidePanel.box_gif.removeChildren();
-            this.guidePanel.box_gif.mask = null;
             Laya.Pool.recover("Sprite", Laya.Sprite);
             this.guidePanel.btn_left.off(Laya.Event.MOUSE_UP, this, this.upLeft);
             this.guidePanel.btn_right.off(Laya.Event.MOUSE_UP, this, this.upRight);
@@ -1401,6 +1357,9 @@
                 { url: "common/common_bg2.png", type: Laya.Loader.IMAGE },
                 { url: "common/common_bg3.png", type: Laya.Loader.IMAGE },
                 { url: "common/maskBg.png", type: Laya.Loader.IMAGE },
+                { url: "common/guide_bg.png", type: Laya.Loader.IMAGE },
+                { url: "common/gif1.png", type: Laya.Loader.IMAGE },
+                { url: "common/gif2.png", type: Laya.Loader.IMAGE },
                 { url: "dialog/dialogbg.png", type: Laya.Loader.IMAGE },
                 { url: "res/data/initData.json", type: Laya.Loader.JSON },
                 { url: "font/FZLTCHJW.ttf", type: Laya.Loader.TTF }

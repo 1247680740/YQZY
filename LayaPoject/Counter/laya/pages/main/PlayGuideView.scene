@@ -1,30 +1,35 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":7,
-    "selecteID":19,
+    "selectedBox":2,
+    "selecteID":20,
     "searchKey":"View",
     "props":{"width":1920,"sceneColor":"#000000","height":1080},
     "nodeParent":-1,
-    "maxID":20,
+    "maxID":21,
     "label":"View",
     "isOpen":true,
     "isDirectory":true,
     "isAniNode":true,
+    "ignoreDic":{
+        "guideView/guide_bg.png":"guideView/guide_bg.png",
+        "common/maskBg.png":"common/maskBg.png",
+        "common/guide_bg.png":"common/guide_bg.png"
+    },
     "hasChild":true,
     "compId":2,
     "child":[
         {
             "x":15,
-            "type":"Image",
-            "searchKey":"Image",
-            "props":{"width":1920,"height":1080,"centerY":0,"centerX":0},
+            "type":"Sprite",
+            "searchKey":"Sprite",
+            "props":{"y":0,"x":0,"width":1920,"texture":"common/maskBg.png","height":1080,"alpha":0.5},
             "nodeParent":2,
-            "label":"Image",
+            "label":"Sprite",
             "isDirectory":false,
             "isAniNode":true,
             "hasChild":false,
-            "compId":6,
+            "compId":20,
             "child":[
                 ]
         },
@@ -32,7 +37,7 @@
             "x":15,
             "type":"Panel",
             "searchKey":"Panel,panel_content",
-            "props":{"var":"panel_content","centerY":0,"centerX":0},
+            "props":{"width":892,"var":"panel_content","height":552,"centerY":0,"centerX":0},
             "nodeParent":2,
             "label":"panel_content",
             "isOpen":true,
@@ -45,7 +50,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,img_bg",
-                    "props":{"y":0,"x":0,"var":"img_bg"},
+                    "props":{"y":0,"x":0,"width":780,"var":"img_bg","texture":"common/guide_bg.png","height":552},
                     "nodeParent":7,
                     "label":"img_bg",
                     "isDirectory":false,
@@ -59,7 +64,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,btn_close",
-                    "props":{"var":"btn_close"},
+                    "props":{"y":240,"x":820,"var":"btn_close","texture":"guideView/btn_close.png"},
                     "nodeParent":7,
                     "label":"btn_close",
                     "isDirectory":false,
@@ -73,7 +78,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,box_gif",
-                    "props":{"y":20,"x":0,"var":"box_gif"},
+                    "props":{"y":20,"x":15,"var":"box_gif"},
                     "nodeParent":7,
                     "label":"box_gif",
                     "isDirectory":false,
@@ -101,7 +106,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,btn_left",
-                    "props":{"var":"btn_left"},
+                    "props":{"y":471,"x":419,"var":"btn_left"},
                     "nodeParent":7,
                     "label":"btn_left",
                     "isDirectory":false,
@@ -115,7 +120,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,btn_right",
-                    "props":{"var":"btn_right"},
+                    "props":{"y":471,"x":591,"var":"btn_right"},
                     "nodeParent":7,
                     "label":"btn_right",
                     "isDirectory":false,
@@ -126,6 +131,9 @@
                         ]
                 }]
         }],
+    "appendDic":{
+
+    },
     "animations":[
         {
             "nodes":[

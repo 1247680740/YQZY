@@ -19,7 +19,7 @@ export default class CommonCounter extends ui.common.CommonCounterUI {
         this._parenBox = this.parent as Laya.Box;
         this.img_bg.loadImage("counter/" + this._sourceType + "_normal.png");
         if (this._parenBox) {
-            this._tagPos = this._parenBox.height - (this._parenBox.numChildren * 37);
+            this._tagPos = this._parenBox.height - (this._parenBox.numChildren * 38);
         }
         this.startTween(true);
     }

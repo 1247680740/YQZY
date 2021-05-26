@@ -37,6 +37,9 @@ class Main {
 			{ url: "common/common_bg2.png", type: Laya.Loader.IMAGE },
 			{ url: "common/common_bg3.png", type: Laya.Loader.IMAGE },
 			{ url: "common/maskBg.png", type: Laya.Loader.IMAGE },
+			{ url: "common/guide_bg.png", type: Laya.Loader.IMAGE },
+			{ url: "common/gif1.png", type: Laya.Loader.IMAGE },
+			{ url: "common/gif2.png", type: Laya.Loader.IMAGE },
 			{ url: "dialog/dialogbg.png", type: Laya.Loader.IMAGE },
 			{ url: "res/data/initData.json", type: Laya.Loader.JSON },
 			{ url: "font/FZLTCHJW.ttf", type: Laya.Loader.TTF }

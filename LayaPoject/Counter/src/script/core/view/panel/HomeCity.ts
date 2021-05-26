@@ -108,7 +108,7 @@ export class HomeCity extends ui.main.GameViewSceneUI {
     }
 
     private opneGuide() {
-
+        AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
     }
 
     private initMainBtn() {

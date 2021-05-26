@@ -31,6 +31,9 @@ D common
 R E5B90B1D common_bg1.png
 R F9633A2E common_bg2.png
 R 3C324950 common_bg3.png
+R 540D9102 gif1.png
+R 2F974F18 gif2.png
+R 24B5E835 guide_bg.png
 R 0ED74D3D maskBg.png
 D counter
 P 2E08C02E zhu1_bg.png
@@ -60,3 +63,13 @@ P 584C2301 recall_normal.png
 P EC376B61 reset_disable.png
 P 87232243 reset_down.png
 P B0ADBD6D reset_normal.png
+D guideView
+P 00F2655B btn_close.png
+P 3BD5F38F finish_down.png
+P 484EE321 finish_normal.png
+P D85C1E0A next_down.png
+P D958FBB1 next_normal.png
+P CBC4EF9B point_no.png
+P AB7A8CB6 point_yes.png
+P 18E54BB1 pre_down.png
+P 004A4FD7 pre_normal.png

@@ -36,13 +36,11 @@ export class PlayerGuideMediator extends BaseMediator {
 
     private startIndex: number = 0;
     private videoLen: number = 0;
-    private videoPlay: Laya.Video = null;
-    private maskSP: Laya.Sprite = null;
     private curTween: Laya.Tween = null;
     /** 初始化面板数据 */
     public initData(): void {
         this.startIndex = 1;
-        this.videoLen = 3;
+        this.videoLen = 2;
     }
 
     /** 初始化面板ui */
@@ -63,18 +61,18 @@ export class PlayerGuideMediator extends BaseMediator {
             this.guidePanel.btn_left.visible = true;
             if (this.startIndex == 1) {
                 this.guidePanel.btn_left.visible = false;
-                this.guidePanel.btn_right.loadImage("guide/next_normal.png");
+                this.guidePanel.btn_right.loadImage("guideView/next_normal.png");
             } else if (this.startIndex == this.videoLen) {
-                this.guidePanel.btn_left.loadImage("guide/pre_normal.png");
-                this.guidePanel.btn_right.loadImage("guide/finish_normal.png");
+                this.guidePanel.btn_left.loadImage("guideView/pre_normal.png");
+                this.guidePanel.btn_right.loadImage("guideView/finish_normal.png");
             } else {
-                this.guidePanel.btn_left.loadImage("guide/pre_normal.png");
-                this.guidePanel.btn_right.loadImage("guide/next_normal.png");
+                this.guidePanel.btn_left.loadImage("guideView/pre_normal.png");
+                this.guidePanel.btn_right.loadImage("guideView/next_normal.png");
             }
         } else {
             this.guidePanel.btn_left.visible = false;
             this.guidePanel.btn_right.visible = true;
-            this.guidePanel.btn_right.loadImage("guide/finish_normal.png");
+            this.guidePanel.btn_right.loadImage("guideView/finish_normal.png");
         }
     }
 
@@ -83,18 +81,18 @@ export class PlayerGuideMediator extends BaseMediator {
             for (let i: number = 0; i < this.guidePanel.box_point.numChildren; i++) {
                 let img: Laya.Sprite = this.guidePanel.box_point.getChildAt(i) as Laya.Sprite;
                 if ((i + 1) == this.startIndex) {
-                    img.loadImage("guide/point_yes.png");
+                    img.loadImage("guideView/point_yes.png");
                 } else {
-                    img.loadImage("guide/point_no.png");
+                    img.loadImage("guideView/point_no.png");
                 }
             }
         } else {
             for (let i: number = 1; i < this.videoLen + 1; i++) {
                 let pointImg: Laya.Sprite = Laya.Pool.getItemByClass("Sprite", Laya.Sprite);
                 if (i == this.startIndex) {
-                    pointImg.loadImage("guide/point_yes.png");
+                    pointImg.loadImage("guideView/point_yes.png");
                 } else {
-                    pointImg.loadImage("guide/point_no.png");
+                    pointImg.loadImage("guideView/point_no.png");
                 }
                 pointImg.x = (i - 1) * 28;
                 this.guidePanel.box_point.addChild(pointImg);
@@ -103,47 +101,12 @@ export class PlayerGuideMediator extends BaseMediator {
     }
 
     private initVideo() {
-        if (!this.videoPlay) {
-            this.videoPlay = new Laya.Video();
-            this.guidePanel.box_gif.addChild(this.videoPlay);
-            this.videoPlay.width = 750;
-            this.videoPlay.height = 440;
-            this.videoPlay.loop = true;
-            this.videoPlay.muted = true;
-            this.videoPlay.preload = "auto";
-            this.addMaskSP();
-        }
-        this.videoPlay.pause();
-        this.videoPlay.load("res/gif/gif" + this.startIndex + ".mp4");
-        this.videoPlay.reload();
-        this.videoPlay.play();
+        this.guidePanel.box_gif.loadImage("common/gif" + this.startIndex + ".png");
     }
 
     private initAni() {
         this.guidePanel.panel_content.scale(0, 0);
-        this.curTween = Laya.Tween.to(this.guidePanel.panel_content, { scaleX: 1, scaleY: 1 }, 500);
-    }
-
-    private addMaskSP(): void {
-        if (!this.maskSP) {
-            this.maskSP = new Laya.Sprite();
-            this.guidePanel.panel_content.addChildAt(this.maskSP, 0);
-        }
-        //自定义路径
-        let chaX: number = 10;
-        let wNum: number = 750;
-        let hNum: number = 440;
-        let chaW: number = wNum - chaX;
-        let chaH: number = hNum - chaX;
-        let path: any[] = [
-            ["moveTo", chaX, 0],
-            ["arcTo", wNum, 0, wNum, chaX, 10],
-            ["arcTo", wNum, hNum, chaW, hNum, 10],
-            ["arcTo", 0, hNum, 0, chaH, 10],
-            ["arcTo", 0, 0, chaX, 0, 10],
-        ];
-        this.maskSP.graphics.drawPath(0, 0, path, { fillStyle: "#00ffff" });
-        this.guidePanel.box_gif.mask = this.maskSP;
+        this.curTween = Laya.Tween.to(this.guidePanel.panel_content, { scaleX: 1, scaleY: 1 }, 200, Laya.Ease.sineIn);
     }
 
     private upLeft() {
@@ -169,30 +132,20 @@ export class PlayerGuideMediator extends BaseMediator {
     }
 
     private downLeft() {
-        this.guidePanel.btn_left.loadImage("guide/pre_down.png");
+        this.guidePanel.btn_left.loadImage("guideView/pre_down.png");
     }
 
     private downRight() {
         if (this.startIndex == this.videoLen) {
-            this.guidePanel.btn_right.loadImage("guide/finish_down.png");
+            this.guidePanel.btn_right.loadImage("guideView/finish_down.png");
         } else {
-            this.guidePanel.btn_right.loadImage("guide/next_down.png");
+            this.guidePanel.btn_right.loadImage("guideView/next_down.png");
         }
     }
 
 
     private closeButtonClick(): void {
         Laya.Tween.clear(this.curTween);
-        if (this.videoPlay) {
-            this.videoPlay.pause();
-            this.videoPlay.destroy();
-        }
-        this.videoPlay = null;
-        this.maskSP.graphics.clear();
-        this.maskSP.destroy();
-        this.maskSP = null;
-        this.guidePanel.box_gif.removeChildren();
-        this.guidePanel.box_gif.mask = null;
         Laya.Pool.recover("Sprite", Laya.Sprite);
         this.guidePanel.btn_left.off(Laya.Event.MOUSE_UP, this, this.upLeft);
         this.guidePanel.btn_right.off(Laya.Event.MOUSE_UP, this, this.upRight);
