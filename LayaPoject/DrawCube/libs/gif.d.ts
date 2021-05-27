@@ -44,6 +44,7 @@ declare class GuideView {
     iniListener();
 }
 
+/** Param参考 */
 // gifLen: 3,
 // startIndex: 1,
 // sourceType: ".gif",
