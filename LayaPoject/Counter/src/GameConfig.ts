@@ -10,7 +10,7 @@ export default class GameConfig{
     static screenMode:string="horizontal";
     static alignV:string="middle";
     static alignH:string="center";
-    static startScene:any="main/PlayGuideView.scene";
+    static startScene:any="common/SingleCounterItem.scene";
     static sceneRoot:string="";
     static debug:boolean=false;
     static stat:boolean=false;

@@ -41,7 +41,7 @@
                     this.createView(SingleCounterItemUI.uiView);
                 }
             }
-            SingleCounterItemUI.uiView = { "type": "View", "props": { "width": 148, "height": 895 }, "compId": 2, "child": [{ "type": "Image", "props": { "var": "img_top", "top": 0, "centerX": 0 }, "compId": 3 }, { "type": "Label", "props": { "y": 19, "x": 74, "var": "label_num", "valign": "middle", "fontSize": 80, "font": "Arial", "color": "#ffffff", "centerX": 0, "align": "center" }, "compId": 5 }, { "type": "CommonButton", "props": { "width": 134, "var": "btn_unit", "runtime": "script/core/view/common/CommonButton.ts", "height": 98, "centerX": 0, "bottom": 0 }, "compId": 4 }, { "type": "Sprite", "props": { "y": 756, "x": 0, "width": 148, "var": "sp_groung", "height": 2, "alpha": 0 }, "compId": 7, "child": [{ "type": "Script", "props": { "type": "static", "runtime": "Laya.RigidBody" }, "compId": 8 }, { "type": "Script", "props": { "y": 0, "x": 0, "width": 148, "label": "ground", "height": 2, "runtime": "Laya.BoxCollider" }, "compId": 9 }] }, { "type": "Box", "props": { "width": 72, "var": "box_zhu", "height": 546, "centerX": 0, "bottom": 139 }, "compId": 6 }], "loadList": [], "loadList3D": [] };
+            SingleCounterItemUI.uiView = { "type": "View", "props": { "width": 148, "height": 895 }, "compId": 2, "child": [{ "type": "Box", "props": { "width": 148, "top": 0, "height": 108, "centerX": 0 }, "compId": 14, "child": [{ "type": "Image", "props": { "var": "img_top", "centerY": 0, "centerX": 0 }, "compId": 3 }, { "type": "Label", "props": { "var": "label_num", "fontSize": 80, "font": "Arial", "color": "#ffffff", "centerY": 6, "centerX": 0 }, "compId": 5 }] }, { "type": "CommonButton", "props": { "width": 134, "var": "btn_unit", "runtime": "script/core/view/common/CommonButton.ts", "height": 98, "centerX": 0, "bottom": 0 }, "compId": 4 }, { "type": "Sprite", "props": { "y": 756, "x": 0, "width": 148, "var": "sp_groung", "height": 2, "alpha": 0 }, "compId": 7, "child": [{ "type": "Script", "props": { "type": "static", "runtime": "Laya.RigidBody" }, "compId": 8 }, { "type": "Script", "props": { "y": 0, "x": 0, "width": 148, "label": "ground", "height": 2, "runtime": "Laya.BoxCollider" }, "compId": 9 }] }, { "type": "Box", "props": { "width": 72, "var": "box_zhu", "height": 546, "centerX": 0, "bottom": 139 }, "compId": 6 }], "loadList": [], "loadList3D": [] };
             common.SingleCounterItemUI = SingleCounterItemUI;
             REG("ui.common.SingleCounterItemUI", SingleCounterItemUI);
         })(common = ui.common || (ui.common = {}));
@@ -142,7 +142,7 @@
     GameConfig.screenMode = "horizontal";
     GameConfig.alignV = "middle";
     GameConfig.alignH = "center";
-    GameConfig.startScene = "main/PlayGuideView.scene";
+    GameConfig.startScene = "common/SingleCounterItem.scene";
     GameConfig.sceneRoot = "";
     GameConfig.debug = false;
     GameConfig.stat = false;
@@ -1149,6 +1149,7 @@
             this.startIndex = 0;
             this.videoLen = 0;
             this.curTween = null;
+            this.isTouch = false;
         }
         listNotificationInterests() {
             return [
@@ -1172,6 +1173,7 @@
         initData() {
             this.startIndex = 1;
             this.videoLen = 2;
+            this.isTouch = false;
         }
         initUI() {
             this.initBtnShow();
@@ -1240,6 +1242,9 @@
             this.curTween = Laya.Tween.to(this.guidePanel.panel_content, { scaleX: 1, scaleY: 1 }, 200, Laya.Ease.sineIn);
         }
         upLeft() {
+            if (!this.isTouch)
+                return;
+            this.isTouch = false;
             if (this.startIndex == 1) {
                 return;
             }
@@ -1251,6 +1256,9 @@
             }
         }
         upRight() {
+            if (!this.isTouch)
+                return;
+            this.isTouch = false;
             if (this.startIndex + 1 > this.videoLen) {
                 this.closeButtonClick();
             }
@@ -1262,9 +1270,11 @@
             }
         }
         downLeft() {
+            this.isTouch = true;
             this.guidePanel.btn_left.loadImage("guideView/pre_down.png");
         }
         downRight() {
+            this.isTouch = true;
             if (this.startIndex == this.videoLen) {
                 this.guidePanel.btn_right.loadImage("guideView/finish_down.png");
             }
@@ -1376,9 +1386,9 @@
             Laya.AtlasInfoManager.enable("fileconfig.json", Laya.Handler.create(this, this.onConfigLoaded));
         }
         onConfigLoaded() {
-            window["gameLoading"].remove();
             AppFacade.getInstance().startUp(GameLayerManager.gameLayer());
             AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_HOME);
+            AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
             window["gameLoading"].remove();
         }
     }

@@ -63,9 +63,9 @@ class Main {
 	}
 
 	onConfigLoaded(): void {
-		window["gameLoading"].remove();
 		AppFacade.getInstance().startUp(GameLayerManager.gameLayer());
 		AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_HOME);
+		AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
 		window["gameLoading"].remove();
 	}
 }

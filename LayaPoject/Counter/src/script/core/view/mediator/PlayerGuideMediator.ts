@@ -37,10 +37,12 @@ export class PlayerGuideMediator extends BaseMediator {
     private startIndex: number = 0;
     private videoLen: number = 0;
     private curTween: Laya.Tween = null;
+    private isTouch: boolean = false;
     /** 初始化面板数据 */
     public initData(): void {
         this.startIndex = 1;
         this.videoLen = 2;
+        this.isTouch = false;
     }
 
     /** 初始化面板ui */
@@ -110,6 +112,9 @@ export class PlayerGuideMediator extends BaseMediator {
     }
 
     private upLeft() {
+        if (!this.isTouch)
+            return;
+        this.isTouch = false;
         if (this.startIndex == 1) {
             return;
         } else {
@@ -121,6 +126,9 @@ export class PlayerGuideMediator extends BaseMediator {
     }
 
     private upRight() {
+        if (!this.isTouch)
+            return;
+        this.isTouch = false;
         if (this.startIndex + 1 > this.videoLen) {
             this.closeButtonClick();
         } else {
@@ -132,10 +140,12 @@ export class PlayerGuideMediator extends BaseMediator {
     }
 
     private downLeft() {
+        this.isTouch = true;
         this.guidePanel.btn_left.loadImage("guideView/pre_down.png");
     }
 
     private downRight() {
+        this.isTouch = true;
         if (this.startIndex == this.videoLen) {
             this.guidePanel.btn_right.loadImage("guideView/finish_down.png");
         } else {
