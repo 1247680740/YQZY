@@ -238,8 +238,25 @@ export class HomeCity extends ui.main.GameViewSceneUI {
         AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_REMOVEDIALOG, 1);
     }
 
+    private guideView: GuideView = null;
     private openGuide() {
-        AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
+        this.guideView = null;
+        this.guideView = new GuideView({
+            gifLen: 3,
+			startIndex: 1,
+			sourceType: ".gif",
+			gifSource: "../bin/res/gif/",
+			bgSource: "../bin/guide/guide_bg.png",
+			bgWidth: 892,
+			bgHeight: 552,
+			pointSource: "../bin/guide/point_",
+			preSource: "../bin/guide/pre_",
+			nextSource: "../bin/guide/next_",
+			finishSource: "../bin/guide/finish_",
+			closeSource: "../bin/guide/ico-close.png",
+			btnBgSource:"../bin/guide/guide_btnBg.png"
+        });
+        this.guideView.initView();
     }
 
     public resetGameView(): void {

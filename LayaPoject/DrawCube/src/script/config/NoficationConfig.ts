@@ -26,12 +26,6 @@ export class NoficationConfig {
     //关闭主界面UI
     public static CLOSE_MAIN: string = "MainNotify_CLOSE_MAIN";
 
-    // 打开新手引导UI
-    public static OPEN_GUIDE: string = "MainNotify_OPEN_GUIDE";
-
-    // 关闭新手引导UI
-    public static CLOSE_GUIDE: string = "MainNotify_CLOSE_GUIDE";
-
     //打开自定义绘制界面
     public static OPEN_CUSTOM: string = "MainNotify_OPEN_CUSTOM";
 

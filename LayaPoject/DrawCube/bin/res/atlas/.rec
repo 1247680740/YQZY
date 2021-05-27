@@ -60,14 +60,3 @@ P 72F99C9F btn_sure_normal.png
 R A0560505 dialog_bg.png
 P 55100BD4 dialog_btnBg.png
 D guide
-P F23AB021 finish_down.png
-P 9F606DC9 finish_normal.png
-R D8861384 guide_bg.png
-P 3709D4D7 guide_btnBg.png
-P 00F2655B ico-close.png
-P 8AD436B7 next_down.png
-P DA15A883 next_normal.png
-P 5F535C33 point_no.png
-P 1ED0BFC2 point_yes.png
-P 2A3CF40C pre_down.png
-P 546DCE50 pre_normal.png

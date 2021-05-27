@@ -36,7 +36,6 @@ class Main {
 			{ url: "common/maskBg.png", type: Laya.Loader.IMAGE },
 			{ url: "custom/custome_bg.png", type: Laya.Loader.IMAGE },
 			{ url: "dialog/dialog_bg.png", type: Laya.Loader.IMAGE },
-			{ url: "guide/guide_bg.png", type: Laya.Loader.IMAGE },
 			{ url: "res/data/initData.json", type: Laya.Loader.JSON },
 		];
 		Laya.loader.load(sourceArr, Laya.Handler.create(this, this.onLoaded), Laya.Handler.create(this, this.onProgress, null, false));
@@ -63,8 +62,27 @@ class Main {
 		Laya.stage.addChildAt(gameBg, 0);
 		AppFacade.getInstance().startUp(GameLayerManager.gameLayer());
 		AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_HOME);
-		AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
+		this.openGuide();
 		window["gameLoading"].remove();
+	}
+
+	openGuide():void{
+		var guideView = new GuideView({
+			gifLen: 3,
+			startIndex: 1,
+			sourceType: ".gif",
+			gifSource: "../bin/res/gif/",
+			bgSource: "../bin/guide/guide_bg.png",
+			bgWidth: 892,
+			bgHeight: 552,
+			pointSource: "../bin/guide/point_",
+			preSource: "../bin/guide/pre_",
+			nextSource: "../bin/guide/next_",
+			finishSource: "../bin/guide/finish_",
+			closeSource: "../bin/guide/ico-close.png",
+			btnBgSource:"../bin/guide/guide_btnBg.png"
+		});
+		guideView.initView();
 	}
 }
 //激活启动类

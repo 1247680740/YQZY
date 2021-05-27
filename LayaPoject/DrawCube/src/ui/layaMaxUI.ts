@@ -78,23 +78,4 @@ export module ui.main {
         }
     }
     REG("ui.main.GameViewSceneUI",GameViewSceneUI);
-    export class PlayerGuideSceneUI extends Scene {
-		public img_mask:Laya.Sprite;
-		public panel_content:Laya.Panel;
-		public btn_close:Laya.Image;
-		public box_gif:Laya.Box;
-		public box_point:Laya.Box;
-		public btn_left:Laya.Box;
-		public left_imgBg:Laya.Image;
-		public left_img:Laya.Image;
-		public btn_right:Laya.Box;
-		public right_img:Laya.Image;
-        public static  uiView:any ={"type":"Scene","props":{"width":1920,"name":"PlayerGuideScene","height":1080},"compId":2,"child":[{"type":"Sprite","props":{"y":0,"x":0,"width":1920,"var":"img_mask","height":1080,"alpha":0.5},"compId":39},{"type":"Panel","props":{"width":892,"var":"panel_content","height":552,"centerY":0,"centerX":0},"compId":3,"child":[{"type":"Image","props":{"x":0,"width":780,"skin":"guide/guide_bg.png","height":552,"centerY":0},"compId":4},{"type":"Image","props":{"var":"btn_close","skin":"guide/ico-close.png","left":820,"centerY":0},"compId":9},{"type":"Box","props":{"width":750,"var":"box_gif","top":20,"left":15,"height":440},"compId":18},{"type":"Box","props":{"y":499,"x":28,"var":"box_point"},"compId":27},{"type":"Box","props":{"width":162,"var":"btn_left","top":472,"left":415,"height":70},"compId":14,"child":[{"type":"Image","props":{"width":162,"var":"left_imgBg","skin":"guide/guide_btnBg.png","height":70,"centerY":0,"centerX":0},"compId":16},{"type":"Image","props":{"var":"left_img","centerY":0,"centerX":0},"compId":19}]},{"type":"Box","props":{"width":162,"var":"btn_right","top":472,"left":593,"height":70},"compId":28,"child":[{"type":"Image","props":{"width":162,"skin":"guide/guide_btnBg.png","height":70,"centerY":0,"centerX":0},"compId":29},{"type":"Image","props":{"var":"right_img","centerY":0,"centerX":0},"compId":30}]}]}],"loadList":["guide/guide_bg.png","guide/ico-close.png","guide/guide_btnBg.png"],"loadList3D":[]};
-        constructor(){ super()}
-        createChildren():void {
-            super.createChildren();
-            this.createView(PlayerGuideSceneUI.uiView);
-        }
-    }
-    REG("ui.main.PlayerGuideSceneUI",PlayerGuideSceneUI);
 }

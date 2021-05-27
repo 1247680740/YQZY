@@ -66,18 +66,6 @@
             GameViewSceneUI.uiView = { "type": "Scene", "props": { "width": 1920, "runtime": "script/GameUI.ts", "positionVariance_0": 100, "name": "GameViewScene", "maxPartices": 100, "height": 1080 }, "compId": 1, "child": [{ "type": "Image", "props": { "var": "img_leftBg", "top": 0, "left": 18 }, "compId": 22 }, { "type": "Image", "props": { "var": "img_rightBg", "top": 24, "right": 20 }, "compId": 23 }, { "type": "Image", "props": { "var": "img_playIcon", "top": 101, "skin": "common/common_playIcon.png", "right": 47 }, "compId": 24 }, { "type": "Image", "props": { "top": 355, "skin": "common/common_rightTop.png", "right": 39 }, "compId": 26 }, { "type": "Panel", "props": { "y": 355, "x": 1659, "width": 222, "var": "group_panel", "top": 355, "right": 39, "name": "group_panel", "height": 442 }, "compId": 36, "child": [{ "type": "CommonButton", "props": { "width": 0, "var": "btn_square", "top": 20, "name": "btn_square", "left": 12, "height": 0, "runtime": "script/core/view/panel/common/CommonButtonScript.ts" }, "compId": 27 }, { "type": "CommonButton", "props": { "width": 0, "var": "btn_rect", "top": 20, "right": 12, "name": "btn_rect", "height": 0, "runtime": "script/core/view/panel/common/CommonButtonScript.ts" }, "compId": 28 }, { "type": "CommonButton", "props": { "width": 0, "var": "btn_circle", "top": 130, "name": "btn_circle", "left": 12, "height": 0, "runtime": "script/core/view/panel/common/CommonButtonScript.ts" }, "compId": 29 }, { "type": "CommonButton", "props": { "width": 0, "var": "btn_triangle", "top": 130, "right": 12, "name": "btn_triangle", "height": 0, "runtime": "script/core/view/panel/common/CommonButtonScript.ts" }, "compId": 30 }, { "type": "CommonButton", "props": { "width": 0, "var": "btn_trape", "top": 240, "name": "btn_trape", "left": 12, "height": 0, "runtime": "script/core/view/panel/common/CommonButtonScript.ts" }, "compId": 31 }, { "type": "CommonButton", "props": { "width": 0, "var": "btn_irreg", "top": 240, "right": 12, "name": "btn_irreg", "height": 0, "runtime": "script/core/view/panel/common/CommonButtonScript.ts" }, "compId": 32 }, { "type": "CommonButton", "props": { "width": 0, "var": "btn_custom", "top": 350, "name": "btn_custom", "height": 0, "centerX": 0, "runtime": "script/core/view/panel/common/CommonButtonScript.ts" }, "compId": 33 }] }, { "type": "Panel", "props": { "y": 75, "x": 60, "width": 1497, "var": "group_content", "height": 923 }, "compId": 38 }, { "type": "Image", "props": { "top": 821, "skin": "button/btn_bg.png", "right": 38 }, "compId": 41 }, { "type": "Image", "props": { "top": 908, "skin": "button/btn_bg.png", "right": 38 }, "compId": 42 }, { "type": "Button", "props": { "var": "btn_recall", "top": 833, "stateNum": 1, "skin": "button/recall_normal.png", "right": 47, "name": "btn_recall" }, "compId": 39 }, { "type": "Button", "props": { "var": "btn_reset", "top": 921, "stateNum": 1, "skin": "button/reset_normal.png", "right": 47, "name": "btn_reset" }, "compId": 40 }, { "type": "Image", "props": { "var": "img_guide", "skin": "common/guideBtn.png", "right": 106, "bottom": 38 }, "compId": 43 }], "loadList": ["common/common_playIcon.png", "common/common_rightTop.png", "button/btn_bg.png", "button/recall_normal.png", "button/reset_normal.png", "common/guideBtn.png"], "loadList3D": [] };
             main.GameViewSceneUI = GameViewSceneUI;
             REG("ui.main.GameViewSceneUI", GameViewSceneUI);
-            class PlayerGuideSceneUI extends Scene {
-                constructor() {
-                    super();
-                }
-                createChildren() {
-                    super.createChildren();
-                    this.createView(PlayerGuideSceneUI.uiView);
-                }
-            }
-            PlayerGuideSceneUI.uiView = { "type": "Scene", "props": { "width": 1920, "name": "PlayerGuideScene", "height": 1080 }, "compId": 2, "child": [{ "type": "Sprite", "props": { "y": 0, "x": 0, "width": 1920, "var": "img_mask", "height": 1080, "alpha": 0.5 }, "compId": 39 }, { "type": "Panel", "props": { "width": 892, "var": "panel_content", "height": 552, "centerY": 0, "centerX": 0 }, "compId": 3, "child": [{ "type": "Image", "props": { "x": 0, "width": 780, "skin": "guide/guide_bg.png", "height": 552, "centerY": 0 }, "compId": 4 }, { "type": "Image", "props": { "var": "btn_close", "skin": "guide/ico-close.png", "left": 820, "centerY": 0 }, "compId": 9 }, { "type": "Box", "props": { "width": 750, "var": "box_gif", "top": 20, "left": 15, "height": 440 }, "compId": 18 }, { "type": "Box", "props": { "y": 499, "x": 28, "var": "box_point" }, "compId": 27 }, { "type": "Box", "props": { "width": 162, "var": "btn_left", "top": 472, "left": 415, "height": 70 }, "compId": 14, "child": [{ "type": "Image", "props": { "width": 162, "var": "left_imgBg", "skin": "guide/guide_btnBg.png", "height": 70, "centerY": 0, "centerX": 0 }, "compId": 16 }, { "type": "Image", "props": { "var": "left_img", "centerY": 0, "centerX": 0 }, "compId": 19 }] }, { "type": "Box", "props": { "width": 162, "var": "btn_right", "top": 472, "left": 593, "height": 70 }, "compId": 28, "child": [{ "type": "Image", "props": { "width": 162, "skin": "guide/guide_btnBg.png", "height": 70, "centerY": 0, "centerX": 0 }, "compId": 29 }, { "type": "Image", "props": { "var": "right_img", "centerY": 0, "centerX": 0 }, "compId": 30 }] }] }], "loadList": ["guide/guide_bg.png", "guide/ico-close.png", "guide/guide_btnBg.png"], "loadList3D": [] };
-            main.PlayerGuideSceneUI = PlayerGuideSceneUI;
-            REG("ui.main.PlayerGuideSceneUI", PlayerGuideSceneUI);
         })(main = ui.main || (ui.main = {}));
     })(ui || (ui = {}));
 
@@ -91,8 +79,6 @@
     NoficationConfig.CLOSE_HOME = "SceneNotify_CLOSE_HOME";
     NoficationConfig.OPEN_MAIN = "MainNotify_OPEN_MAIN";
     NoficationConfig.CLOSE_MAIN = "MainNotify_CLOSE_MAIN";
-    NoficationConfig.OPEN_GUIDE = "MainNotify_OPEN_GUIDE";
-    NoficationConfig.CLOSE_GUIDE = "MainNotify_CLOSE_GUIDE";
     NoficationConfig.OPEN_CUSTOM = "MainNotify_OPEN_CUSTOM";
     NoficationConfig.CLOSE_CUSTOM = "MainNotify_CLOSE_CUSTOM";
     NoficationConfig.OPEN_REMOVEDIALOG = "MainNotify_OPEN_REMOVEDIALOG";
@@ -2314,6 +2300,7 @@
             this.curShowSpId = 0;
             this.posA = new Laya.Vector3();
             this._translate = new Laya.Vector3();
+            this.guideView = null;
             this.firstPoint = new Laya.Vector3();
             this.centerPoint = new Laya.Vector3();
             this.secondPoint = new Laya.Vector3();
@@ -2492,7 +2479,23 @@
             AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_REMOVEDIALOG, 1);
         }
         openGuide() {
-            AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
+            this.guideView = null;
+            this.guideView = new GuideView({
+                gifLen: 3,
+                startIndex: 1,
+                sourceType: ".gif",
+                gifSource: "../bin/res/gif/",
+                bgSource: "../bin/guide/guide_bg.png",
+                bgWidth: 892,
+                bgHeight: 552,
+                pointSource: "../bin/guide/point_",
+                preSource: "../bin/guide/pre_",
+                nextSource: "../bin/guide/next_",
+                finishSource: "../bin/guide/finish_",
+                closeSource: "../bin/guide/ico-close.png",
+                btnBgSource: "../bin/guide/guide_btnBg.png"
+            });
+            this.guideView.initView();
         }
         resetGameView() {
             this.removeTempSp();
@@ -3049,201 +3052,6 @@
         }
     }
 
-    class PlayerGuideView extends ui.main.PlayerGuideSceneUI {
-        constructor() {
-            super();
-        }
-    }
-
-    class PlayerGuideMediator extends BaseMediator {
-        constructor(viewComponent = null) {
-            super(PlayerGuideMediator.NAME, viewComponent);
-            this.guidePanel = new PlayerGuideView();
-            this.curIndex = 1;
-            this.videoLen = 3;
-            this.videoPlay = null;
-            this.curTween = null;
-            this.maskSP = null;
-        }
-        listNotificationInterests() {
-            return [
-                NoficationConfig.OPEN_GUIDE,
-                NoficationConfig.CLOSE_GUIDE
-            ];
-        }
-        handleNotification(notification) {
-            var data = notification.getBody();
-            switch (notification.getName()) {
-                case NoficationConfig.OPEN_GUIDE: {
-                    this.showUI(this.guidePanel, false, 1920, 1080, 0);
-                    break;
-                }
-                case NoficationConfig.CLOSE_GUIDE: {
-                    this.closeButtonClick();
-                    break;
-                }
-            }
-        }
-        initData() {
-            this.curIndex = 1;
-            this.videoLen = 3;
-        }
-        initUI() {
-            this.guidePanel.img_mask.loadImage("common/maskBg.png");
-            this.initBtnShow();
-            this.initPoint();
-            this.initVideo();
-            this.setGroupAni();
-            this.guidePanel.btn_left.on(Laya.Event.MOUSE_UP, this, this.upLeft);
-            this.guidePanel.btn_right.on(Laya.Event.MOUSE_UP, this, this.upRight);
-            this.guidePanel.btn_left.on(Laya.Event.MOUSE_DOWN, this, this.downLeft);
-            this.guidePanel.btn_right.on(Laya.Event.MOUSE_DOWN, this, this.downRight);
-            this.guidePanel.btn_close.on(Laya.Event.CLICK, this, this.closeButtonClick);
-        }
-        setGroupAni() {
-            this.guidePanel.panel_content.scale(0, 0);
-            this.curTween = Laya.Tween.to(this.guidePanel.panel_content, { scaleX: 1, scaleY: 1 }, 300, Laya.Ease.sineIn);
-        }
-        downLeft() {
-            this.guidePanel.left_img.skin = "guide/pre_down.png";
-        }
-        downRight() {
-            if (this.curIndex == this.videoLen) {
-                this.guidePanel.right_img.skin = "guide/finish_down.png";
-            }
-            else {
-                this.guidePanel.right_img.skin = "guide/next_down.png";
-            }
-        }
-        upLeft() {
-            if (this.curIndex == 1) {
-                return;
-            }
-            else {
-                this.curIndex -= 1;
-                this.initBtnShow();
-                this.initPoint();
-                this.initVideo();
-            }
-        }
-        upRight() {
-            if (this.curIndex + 1 > this.videoLen) {
-                this.closeButtonClick();
-            }
-            else {
-                this.curIndex += 1;
-                this.initBtnShow();
-                this.initPoint();
-                this.initVideo();
-            }
-        }
-        initBtnShow() {
-            if (this.videoLen > 1) {
-                this.guidePanel.btn_left.visible = true;
-                if (this.curIndex == 1) {
-                    this.guidePanel.btn_left.visible = false;
-                    this.guidePanel.right_img.skin = "guide/next_normal.png";
-                }
-                else if (this.curIndex == this.videoLen) {
-                    this.guidePanel.left_img.skin = "guide/pre_normal.png";
-                    this.guidePanel.right_img.skin = "guide/finish_normal.png";
-                }
-                else {
-                    this.guidePanel.left_img.skin = "guide/pre_normal.png";
-                    this.guidePanel.right_img.skin = "guide/next_normal.png";
-                }
-            }
-            else {
-                this.guidePanel.btn_left.visible = false;
-                this.guidePanel.right_img.skin = "guide/finish_normal.png";
-            }
-        }
-        initPoint() {
-            if (this.guidePanel.box_point.numChildren > 0) {
-                for (let i = 0; i < this.guidePanel.box_point.numChildren; i++) {
-                    let img = this.guidePanel.box_point.getChildAt(i);
-                    if ((i + 1) == this.curIndex) {
-                        img.skin = "guide/point_yes.png";
-                    }
-                    else {
-                        img.skin = "guide/point_no.png";
-                    }
-                }
-            }
-            else {
-                for (let i = 1; i < this.videoLen + 1; i++) {
-                    let pointImg = new Laya.Image();
-                    if (i == this.curIndex) {
-                        pointImg.skin = "guide/point_yes.png";
-                    }
-                    else {
-                        pointImg.skin = "guide/point_no.png";
-                    }
-                    pointImg.x = (i - 1) * 28;
-                    this.guidePanel.box_point.addChild(pointImg);
-                }
-            }
-        }
-        addMaskSP() {
-            if (!this.maskSP) {
-                this.maskSP = new Laya.Sprite();
-                this.guidePanel.panel_content.addChildAt(this.maskSP, 0);
-            }
-            let chaX = 10;
-            let wNum = 750;
-            let hNum = 440;
-            let chaW = wNum - chaX;
-            let chaH = hNum - chaX;
-            let path = [
-                ["moveTo", chaX, 0],
-                ["arcTo", wNum, 0, wNum, chaX, 10],
-                ["arcTo", wNum, hNum, chaW, hNum, 10],
-                ["arcTo", 0, hNum, 0, chaH, 10],
-                ["arcTo", 0, 0, chaX, 0, 10],
-            ];
-            this.maskSP.graphics.drawPath(0, 0, path, { fillStyle: "#00ffff" });
-            this.guidePanel.box_gif.mask = this.maskSP;
-        }
-        initVideo() {
-            if (!this.videoPlay) {
-                this.videoPlay = new Laya.Video();
-                this.guidePanel.box_gif.addChild(this.videoPlay);
-                this.videoPlay.width = 750;
-                this.videoPlay.height = 440;
-                this.videoPlay.loop = true;
-                this.videoPlay.muted = true;
-                this.videoPlay.preload = "auto";
-                this.addMaskSP();
-            }
-            this.videoPlay.pause();
-            this.videoPlay.load("res/gif/gif" + this.curIndex + ".mp4");
-            this.videoPlay.reload();
-            this.videoPlay.play();
-        }
-        closeButtonClick() {
-            Laya.Tween.clear(this.curTween);
-            Laya.loader.clearTextureRes("common/maskBg.png");
-            if (this.videoPlay) {
-                this.videoPlay.pause();
-                this.videoPlay.destroy();
-            }
-            this.maskSP.graphics.clear();
-            this.maskSP.destroy();
-            this.guidePanel.box_gif.mask = null;
-            this.guidePanel.box_gif.removeChildren();
-            this.guidePanel.box_point.removeChildren();
-            this.videoPlay = null;
-            this.maskSP = null;
-            this.guidePanel.btn_left.off(Laya.Event.MOUSE_UP, this, this.upLeft);
-            this.guidePanel.btn_right.off(Laya.Event.MOUSE_UP, this, this.upRight);
-            this.guidePanel.btn_left.off(Laya.Event.MOUSE_DOWN, this, this.downLeft);
-            this.guidePanel.btn_right.off(Laya.Event.MOUSE_DOWN, this, this.downRight);
-            this.guidePanel.btn_close.off(Laya.Event.CLICK, this, this.closeButtonClick);
-            this.closePanel(0);
-        }
-    }
-    PlayerGuideMediator.NAME = "PlayerGuideMediator";
-
     class RemoveDialogView extends ui.dialog.RemoveDialogUI {
         constructor() {
             super();
@@ -3337,7 +3145,6 @@
         execute(notification) {
             var main = GameLayerManager.gameLayer().panelLayer;
             this.facade.registerMediator(new RemoveDialogMediator());
-            this.facade.registerMediator(new PlayerGuideMediator());
         }
     }
 
@@ -3490,7 +3297,6 @@
                 { url: "common/maskBg.png", type: Laya.Loader.IMAGE },
                 { url: "custom/custome_bg.png", type: Laya.Loader.IMAGE },
                 { url: "dialog/dialog_bg.png", type: Laya.Loader.IMAGE },
-                { url: "guide/guide_bg.png", type: Laya.Loader.IMAGE },
                 { url: "res/data/initData.json", type: Laya.Loader.JSON },
             ];
             Laya.loader.load(sourceArr, Laya.Handler.create(this, this.onLoaded), Laya.Handler.create(this, this.onProgress, null, false));
@@ -3512,8 +3318,26 @@
             Laya.stage.addChildAt(gameBg, 0);
             AppFacade.getInstance().startUp(GameLayerManager.gameLayer());
             AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_HOME);
-            AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_GUIDE);
+            this.openGuide();
             window["gameLoading"].remove();
+        }
+        openGuide() {
+            var guideView = new GuideView({
+                gifLen: 3,
+                startIndex: 1,
+                sourceType: ".gif",
+                gifSource: "../bin/res/gif/",
+                bgSource: "../bin/guide/guide_bg.png",
+                bgWidth: 892,
+                bgHeight: 552,
+                pointSource: "../bin/guide/point_",
+                preSource: "../bin/guide/pre_",
+                nextSource: "../bin/guide/next_",
+                finishSource: "../bin/guide/finish_",
+                closeSource: "../bin/guide/ico-close.png",
+                btnBgSource: "../bin/guide/guide_btnBg.png"
+            });
+            guideView.initView();
         }
     }
     new Main();
